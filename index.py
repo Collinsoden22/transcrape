@@ -48,7 +48,8 @@ def translate_contents(content, isIndex, language, directory):
 						translated_text = translator.translate(old_text, dest=language).text
 						if old_text != translated_text:
 							for node in soup.findAll(text=old_text):
-								node.replaceWith(translated_text)	# soup = soup.replace_with(old_text, translated_text)
+								node.replaceWith(translated_text)
+								# soup = soup.replace_with(old_text, translated_text)
 						else:
 							# print("Already translated, skipping...")
 							break
@@ -70,7 +71,10 @@ def translate_contents(content, isIndex, language, directory):
 		if(os.path.exists(directory)): # check if directory exist
 			file_dir = directory
 		else:
-			file_dir = os.makedirs(directory, 777, exist_ok=True)
+			try:
+				file_dir = os.makedirs(directory, 777, exist_ok=True)
+			except:
+				print("could not create file {directory}")
 		file_dir = directory + '/index.html'
 	file_saved = save_file(file_dir, soup.prettify())
 
