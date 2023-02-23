@@ -9,38 +9,30 @@
 
 ## About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Transcrape is a pythonn project that can be used to scrape and translate and website. Transcape was inspired by Coding Allstars Tasks. 
 
 ## Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+- Transcape is still under development, hence the content here will  be updated periodically.
+- To get started with transcrape, See [Prerequisites](#installation) .
 
-### Prerequisites
+### Prerequisites <a name = "installation">
 
-What things you need to install the software and how to install them.
+Requirements for installation:
+- Ensure Python3 is installed in your system
+- Clone this repository
+- On your CLI or terminal, navigate to the directory of this project
+- Edit the url you wish to crawl
+- Run 'python3 index.py' and allow the program run
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+- Coming soon
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
 
 ## Usage <a name = "usage"></a>
+- Coming soon
 
-Add notes about how to use the system.
+### Disclaimer
+ - This project is not meant to cause harm to anyone or any software, it will only be visible until the purpose for which it was developed is accomplished
