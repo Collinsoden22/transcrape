@@ -79,9 +79,13 @@ def translate_contents(content, isIndex, language, directory):
     else:
 
         try:
-            file_dir = os.makedirs(directory, 777, exist_ok=True)
+            original_mask = os.umask(0)
+            file_dir = os.makedirs(directory, mode=755, exist_ok=True)
         except:
             print("could not create file {directory}")
+            # original_mask = os.umask(0)
+        finally:
+            os.umask(original_mask)
     file_dir = directory + '/index.html'
     file_saved = save_file(file_dir, soup.prettify())
 

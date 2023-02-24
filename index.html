@@ -11635,8 +11635,29 @@
     </div>
     <div data-template="notifications">
     </div>
-    <script src="assets/js/analytics.js"> </script>
-    <script src="assets/js/Auth.js"> </script>
+    <script src="https://www.classcentral.com/analytics.js">
+    </script>
+    <script type="text/javascript">
+      window.CC = { Class: {} };
+      window.CC.Class.Analytics = new window.Analytics({
+        url: "https://us-central1-class-central-prod.cloudfunctions.net/ub0tz0cmeh",
+        indexes: { "weekly": "2023_02_19", "monthly": "2023_02" },
+        globalProps: { "page": "moocreport", "deviceType": "desktop", "created": "2023-02-23T14:21:15+00:00", "referrer_info": { "referrer": null, "source": null, "term": null, "medium": null }, "user_agent": { "browser": { "family": null, "major": "", "minor": null, "patch": "" }, "os": { "family": null, "major": "", "minor": null, "patch": "", "nickname": null }, "device": { "type": "bot", "family": null } } }
+      });
+      CC.track = window.CC.Class.Analytics.track.bind(window.CC.Class.Analytics);
+      CC.track("pageview");
+    </script>
+    <script>
+      window.TOUCHSCREEN = false;
+      window.addEventListener("touchstart", () => {
+        document.body.classList.add("touch");
+        window.TOUCHSCREEN = true;
+      });
+    </script>
+    </script>
+    <script id="ppress-frontend-script-js" src="https://www.classcentral.com/report/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=3.2.5" type="text/javascript">
+    </script>
+    <script src="assets/js/main.js"> </script>
     <script src="assets/js/MarkComplete.js"> </script>
     <script src="assets/js/message-navigation.js"> </script>
     <script src="assets/js/Misc.js"> </script>
